@@ -1,9 +1,9 @@
-const assert = require('chai').assert;
+import { assert } from "chai";
 
 // Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 const evenOrOdd = (num) => {
   return num % 2 === 0 ? "Even" : "Odd";
-}
+};
 
 describe("evenOrOdd", () => {
   it("2 is even", () => {
