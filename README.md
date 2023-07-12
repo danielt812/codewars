@@ -39,11 +39,11 @@ These commands will execute the tests using Mocha and Chai, displaying the resul
 
 To run the unit tests for an individual file, use `npx mocha`. For example:
 ```
-npx mocha test/oddOrEven.js
+npx mocha javascript/oddOrEven.js
 ```
 
 If you have installed Mocha globally, you can also run the unit tests for an individual file using the `mocha` command. For example:
 
 ```
-mocha test/oddOrEven.js
+mocha javascript/oddOrEven.js
 ```
