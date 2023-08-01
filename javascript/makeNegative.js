@@ -3,7 +3,7 @@
 
 import { assert } from "chai";
 
-const makeNegative = (num) => (num < 0 ? num : -num);
+const makeNegative = (num) => (num === 0 ? num : num < 0 ? num : -num);
 
 describe("makeNegative Basic tests", () => {
   it("Expected value: -1", () => {
