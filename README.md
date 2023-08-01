@@ -30,15 +30,20 @@ npm install -g mocha
 
 ## Usage
 
-To run the unit tests for all files, use the following command:
+To run code on index.js without running unit tests, use the following command:
+```javascript
+npm dev
 ```
+
+To run the unit tests for all files, use the following command:
+```javascript
 npm test
 ```
 
 These commands will execute the tests using Mocha and Chai, displaying the results for each problem set.
 
 To run the unit tests for an individual file, use `npx mocha`. For example:
-```
+```javascript
 npx mocha javascript/oddOrEven.js
 ```
 
