@@ -1,5 +1,6 @@
 // https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/javascript
-// Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
+
+// Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element.
 
 import { assert } from "chai";
 
