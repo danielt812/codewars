@@ -6,8 +6,8 @@ import { assert } from "chai";
 
 const addLength = (str) => str.split(" ").map((s) => s + " " + s.length);
 
-describe("evenOrOdd Basic tests", () => {
-	it("2 is even", () => {
-		assert.deepEqual(addLength("apple ban"), ["apple 5", "ban 3"]);
-	});
+describe(`evenOrOdd basic tests`, () => {
+  it(`Expected value: ["apple 5", "ban 3"]`, () => {
+    assert.deepEqual(addLength("apple ban"), ["apple 5", "ban 3"]);
+  });
 });
