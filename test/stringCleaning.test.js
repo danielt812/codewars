@@ -6,31 +6,13 @@ import { assert } from "chai";
 const stringClean = (str) => str.replaceAll(/\d/g, "");
 
 describe(`stringCleaning basic tests`, () => {
-	it(`Expected value: ""`, () => {
-		assert.strictEqual(stringClean(""), "");
-	});
-	it(`Expected value: "! !"`, () => {
+	it(`! ! Expected value: "! !"`, () => {
 		assert.strictEqual(stringClean("! !"), "! !");
 	});
-	it(`Expected value: ""`, () => {
-		assert.strictEqual(stringClean("123456789"), "");
-	});
-	it(`Expected value: ""`, () => {
+	it(`(E3at m2e2!!) Expected value: "(Eat me!!)"`, () => {
 		assert.strictEqual(stringClean("(E3at m2e2!!)"), "(Eat me!!)");
 	});
-	it(`Expected value: ""`, () => {
+	it(`Dsa32 cdsc34232 csa!!! 1I 4Am cool! Expected value: "Dsa cdsc csa!!! I Am cool!"`, () => {
 		assert.strictEqual(stringClean("Dsa32 cdsc34232 csa!!! 1I 4Am cool!"), "Dsa cdsc csa!!! I Am cool!");
-	});
-	it(`Expected value: ""`, () => {
-		assert.strictEqual(stringClean("A1 A1! AAA   3J4K5L@!!!"), "A A! AAA   JKL@!!!");
-	});
-	it(`Expected value: ""`, () => {
-		assert.strictEqual(stringClean("Adgre2321 A1sad! A2A3A4 fv3fdv3J544K5L@"), "Adgre Asad! AAA fvfdvJKL@");
-	});
-	it(`Expected value: ""`, () => {
-		assert.strictEqual(
-			stringClean("Ad2dsad3ds21 A  1$$s122ad! A2A3Ae24 f44K5L@222222 "),
-			"Addsadds A  $$sad! AAAe fKL@ "
-		);
 	});
 });

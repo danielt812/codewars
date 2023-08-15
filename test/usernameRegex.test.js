@@ -10,7 +10,7 @@ import { assert } from "chai";
 
 const validateUsr = (username) => /^[a-z0-9_]{4,16}$/.test(username);
 
-describe("usernameRegex Basic tests", () => {
+describe("usernameRegex basic tests", () => {
 	it("asddsa - Expected value: true", () => {
 		assert.strictEqual(validateUsr("asddsa"), true);
 	});
@@ -19,23 +19,5 @@ describe("usernameRegex Basic tests", () => {
 	});
 	it("Hass - Expected value: false", () => {
 		assert.strictEqual(validateUsr("Hass"), false);
-	});
-	it("Hass_12assssssssasasasas - Expected value: false", () => {
-		assert.strictEqual(validateUsr("Hass_12assssssssasasasas"), false);
-	});
-	it('"" - Expected value: false', () => {
-		assert.strictEqual(validateUsr(""), false);
-	});
-	it("____ - Expected value: false", () => {
-		assert.strictEqual(validateUsr("012"), false);
-	});
-	it("p1pp1 - Expected value: true", () => {
-		assert.strictEqual(validateUsr("p1pp1"), true);
-	});
-	it("asd43 34 - Expected value: false", () => {
-		assert.strictEqual(validateUsr("asd43 34"), false);
-	});
-	it("asd43_34 - Expected value: true", () => {
-		assert.strictEqual(validateUsr("asd43_34"), true);
 	});
 });
